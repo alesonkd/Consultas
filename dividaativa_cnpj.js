@@ -14,8 +14,6 @@ async function bot_consulta() {
 
     await page.click("[value='Emitir']");
 
-    await page.waitForNavigation();
-
 }
 
 bot_consulta();

@@ -12,8 +12,6 @@ async function bot_consulta() {
 
     await page.click("[value='Consultar']");
 
-    await page.waitForNavigation();
-
 }
 
 bot_consulta();

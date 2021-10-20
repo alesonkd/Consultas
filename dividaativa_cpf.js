@@ -8,14 +8,17 @@ async function bot_consulta() {
 
     await page.goto('https://www.dividaativa.pge.sp.gov.br/sc/pages/crda/emitirCrda.jsf');
     
-    await page.type('[id="emitirCrda:crdaInputCpf"]', '358.092.305-63');
+   var cpf(){
+     return cpf.json
+   }
+
+    await page.type('[id="emitirCrda:crdaInputCpf"]', '${cpf}');
 
    // await page.click('[id="recaptcha-anchor"]');
 
     await page.click("[value='Emitir']");
 
-    await page.waitForNavigation();
-
+    
 }
 
 bot_consulta();

@@ -11,8 +11,6 @@ async function bot_consulta() {
     // await page.click("//img[@id='ICONIMG47']");
     //await page.click("[@id='ICONIMG47']");
 
-    await page.waitForNavigation();
-
     await page.click("[name='CC']");
 
     await page.click("[value='Emitir']");
